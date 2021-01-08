@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.normal {
+  width: 300px;
+  height: 200px;
+  background-color: #efefef;
+
+  .wrapper {
+    width: 231px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .bottomPart {
+    width: 268px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .statusPart {
+      margin-top: 3px;
+
+      .status {
+        background: white;
+        box-shadow: 0 2px 5px 0 rgba(103, 103, 103, 0.3);
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: #c36e39;
+        font-size: 12px;
+      }
+    }
+
+    .middlePart {
+      padding: 0 8px;
+
+      .currentPart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-bottom: 8px;
+
+        span {
+          display: inline-block;
+          white-space: nowrap;
+        }
+      }
+
+      .valuePart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        width: 160px;
+
+        span {
+          display: inline-block;
+          white-space: nowrap;
+        }
+      }
+
+      .name {
+        width: 67px;
+      }
+
+      .value {
+        font-size: 15px;
+        width: 60px;
+        height: 22px;
+        font-weight: 500;
+        text-align: right;
+        line-height: 22px;
+        padding-right: 8px;
+        background-color: white;
+      }
+    }
+
+    .diffPart {
+      border-left: solid 1.5px #ccc;
+      font-size: 13px;
+      width: 100px;
+      padding-left: 8px;
+      margin-top: 6px;
+
+      .name {
+        margin-bottom: 4px;
+      }
+
+      .value {
+        font-size: 15px;
+        width: 58px;
+        height: 22px;
+        font-weight: 500;
+        text-align: right;
+        line-height: 22px;
+        padding-right: 5px;
+        background-color: #444;
+        color: white;
+      }
+    }
+  }
+}

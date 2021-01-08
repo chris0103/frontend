@@ -1,6 +1,6 @@
 export default function getCurrent(server: string, items: string) {
   return new Promise((resolve, reject) => {
-    let url = `http://${server}read?`;
+    let url = `http://${server}search?`;
     const ids = items.split('/');
     ids.forEach(id => {
       url = url.concat(`ids=${id}&`);
@@ -13,7 +13,7 @@ export default function getCurrent(server: string, items: string) {
         'content-type': 'application/json',
       },
       method: 'GET',
-      referrer: 'no-referrer',
+      // referrer: 'no-referrer',
     })
       .then(response => {
         response

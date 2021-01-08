@@ -8,8 +8,12 @@ Install dependencies,
 $ yarn
 ```
 
-Start the dev server,
+Start the dev server, Hot update
 
 ```bash
 $ yarn start
+```
+
+```bash
+$ yarn serv 
 ```
